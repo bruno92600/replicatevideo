@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Video Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <header class="input-header">
+        <div class="brand">
+          <h2 class="">Générateur de vidéos par IA</h2>
+        </div>
+        <form id="generatorForm" class="chat-input-form">
+          <textarea
+            id="promptText"
+            rows="2"
+            placeholder="Décrivez la vidéo que vous souhaitez générer"
+          ></textarea>
+          <button type="submit" id="generateBtn" title="générer">
+            Générer
+          </button>
+        </form>
+      </header>
+      <main class="chat-feed" id="chatFeed">
+        <div class="welcome-message" id="welcomeMessage">
+          <p>Saisissez vos paramètres ci-dessus pour générer une vidéo.</p>
+        </div>
+      </main>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
