@@ -45,13 +45,16 @@ document
     promptInput.value = "";
 
     try {
-      const response = await fetch("http://localhost:3000/api/generate-video", {
-        method: "POST",
-        headers: {
-          "content-type": "application/json",
+      const response = await fetch(
+        "https://video-generator-backend-g5sw.onrender.com/api/generate-video",
+        {
+          method: "POST",
+          headers: {
+            "content-type": "application/json",
+          },
+          body: JSON.stringify({ prompt: promptText }),
         },
-        body: JSON.stringify({ prompt: promptText }),
-      });
+      );
 
       const data = await response.json();
 
